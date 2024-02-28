@@ -3,7 +3,7 @@ services:
   ku-tech-admin:
     image: techcamp-openevent2-app:latest
     ports:
-      - "9017:3000"
+      - "9069:3000"
     
     deploy:
       replicas: 1
