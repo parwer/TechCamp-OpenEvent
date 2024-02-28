@@ -1,15 +1,13 @@
 version: '3'
 services:
   ku-tech-admin:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: techcamp-openevent2-app:latest
     ports:
       - "9016:3000"
     
     deploy:
       replicas: 1
     restart: unless-stopped
-    
+
     environment:
       NODE_ENV: production
